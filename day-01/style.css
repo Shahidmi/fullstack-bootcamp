@@ -22,6 +22,7 @@ body {
 .nav-links a{
     text-decoration: none;
     color: white;
+    padding: 8px 4px;
 }
 
 .nav-links a:hover{
@@ -43,4 +44,25 @@ body {
     padding: 10px 16px;
     border: none;
     cursor: pointer;
+}
+
+
+
+/* Responsive layout for tablets and mobile phones */
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 16px;
+        padding: 20px;
+    }
 }
